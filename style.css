@@ -1,6 +1,6 @@
 body{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* make sections stay on top of each other */
     font-family: "Roboto", 'Times New Roman', Times, serif;
     margin: 0;
 }
@@ -19,14 +19,14 @@ body{
 }
 
 ul{
-    list-style-type: none;
+    list-style-type: none; /* remove default unordered list style */
     margin: 0;
     padding: 0;
 }
 
 a{
     margin-left: 15px;
-    text-decoration: none;
+    text-decoration: none; /* remove default link style */
     color: #e5e7eb;
     font-size: 18px;
 }
@@ -56,8 +56,9 @@ button{
     color: #f9faf8;
     border-radius: 10px;
     padding: 10px 40px;
-    border-style: none;
-
+    border-style: none; /* remove ugly default border style */
+    font-weight: 600;
+    font-size: large;
 }
 
 .informations{
@@ -69,19 +70,18 @@ button{
 .informations .title{
     font-size: 36px;
     color: #1f2937;
-    margin: 40px 0;
+    margin: 40px 0; 
 }
 
 .cardcontainer{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-wrap: wrap; /* make the cards stay separated and organized if windows shrinks (not request but i can't watch em stack )*/
+    gap: 30px; /* keep minimum distance between card by 30px */
 }
 
 .card{
-    width: 160px;
-    height: auto;
+    width: 160px; /* make the writing stay under his img */
 }
 
 .card img{
@@ -93,7 +93,7 @@ button{
     background-color: #e5e7eb;
     padding: 120px 250px;
    }
-   
+
 .textquote{
     font-size: 36px;
     font-weight: 300;
@@ -112,10 +112,9 @@ button{
     margin: 100px 150px;
     padding: 50px 100px; 
     justify-content: space-between; 
-    border-radius: 10px; 
+    border-radius: 10px; /* make rounded edges around all the blue area */
 }
 .ctaleft{
-    display: block;
     color: #e5e7eb;
     width: 60%;
 }
@@ -124,10 +123,19 @@ button{
     font-weight: bold;
 }
 
-.cta button{
+.cta button{ /* don't just call button or it will change the hero one also */
     background-color: #3882f6;
     color: #e5e7eb;
     border: solid 3px #e5e7eb;
     font-size: larger;
     font-weight: bold;
+}
+
+.footer{
+    padding: 40px;
+    background-color: #1f2937;
+    text-align: center; /* just align his text (not a flex item) */
+    color: #e5e7eb;
+    font-weight: 600;
+    font-size: large;
 }
