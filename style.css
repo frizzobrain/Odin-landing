@@ -62,7 +62,7 @@ button{
 
 .informations{
     text-align: center;
-    padding: 10px 200px;
+    padding: 10px 250px;
     margin-bottom: 100px;
 }
 
@@ -91,9 +91,9 @@ button{
 
 .quote{
     background-color: #e5e7eb;
-    padding: 120px 200px;
-    margin-bottom: 100px;
+    padding: 120px 250px;
    }
+   
 .textquote{
     font-size: 36px;
     font-weight: 300;
@@ -103,5 +103,31 @@ button{
 .author{
     text-align: right;
     font-size: x-large;
+    font-weight: bold;
+}
+
+.cta{
+    display: flex;
+    background-color: #3882f6;
+    margin: 100px 150px;
+    padding: 50px 100px; 
+    justify-content: space-between; 
+    border-radius: 10px; 
+}
+.ctaleft{
+    display: block;
+    color: #e5e7eb;
+    width: 60%;
+}
+.ctatitle{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.cta button{
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border: solid 3px #e5e7eb;
+    font-size: larger;
     font-weight: bold;
 }
