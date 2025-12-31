@@ -32,5 +32,76 @@ a{
 }
 
 .hero{
-    margin: 100px 200px;
+    padding: 100px 200px;
+    display: flex;
+    background-color:#1f2937 ;
+    gap: 50px;
+    
+}
+
+.title{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.description{
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border-style: none;
+
+}
+
+.informations{
+    text-align: center;
+    padding: 10px 200px;
+    margin-bottom: 100px;
+}
+
+.informations .title{
+    font-size: 36px;
+    color: #1f2937;
+    margin: 40px 0;
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    width: 160px;
+    height: auto;
+}
+
+.card img{
+    border-radius: 10px;
+    border: 3px solid #3882f6;
+}
+
+.quote{
+    background-color: #e5e7eb;
+    padding: 120px 200px;
+    margin-bottom: 100px;
+   }
+.textquote{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author{
+    text-align: right;
+    font-size: x-large;
+    font-weight: bold;
 }
